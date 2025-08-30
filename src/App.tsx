@@ -1,4 +1,4 @@
-import { Authenticated, GitHubBanner, Refine, WelcomePage } from "@refinedev/core";
+import { Authenticated, GitHubBanner, Refine } from "@refinedev/core";
 import { DevtoolsPanel, DevtoolsProvider } from "@refinedev/devtools";
 import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
 
@@ -6,7 +6,7 @@ import { useNotificationProvider } from "@refinedev/antd";
 import "@refinedev/antd/dist/reset.css";
 
 import { dataProvider, liveProvider, authProvider } from "./providers";
-import { Home, Register, ForgotPassword, Login } from "./pages";
+import { Home, Register, ForgotPassword, Login, CompanyList, Create, EditCompany, List } from "./pages";
 import { Outlet } from "react-router";
 
 import routerBindings, {
@@ -15,7 +15,6 @@ import routerBindings, {
   UnsavedChangesNotifier,
 } from "@refinedev/react-router";
 import { App as AntdApp } from "antd";
-import { createClient } from "graphql-ws";
 import { BrowserRouter, Route, Routes } from "react-router";
 import Layout from "./components/layout";
 import { resources } from "./config/resources";
@@ -58,6 +57,14 @@ function App() {
                   </Authenticated>}
                   >
                     <Route index element={<Home />} />
+                    <Route path="/companies">
+                      <Route index element={<CompanyList />} />
+                      <Route path="new" element={<Create />} />
+                      <Route path="edit/:id" element={<EditCompany />} />
+                    </Route>
+                    <Route path="/tasks">
+                      <Route index element={<List />} />
+                    </Route>
                   </Route>
                 </Routes>
                 <RefineKbar />
