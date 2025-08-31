@@ -6,7 +6,7 @@ import { useNotificationProvider } from "@refinedev/antd";
 import "@refinedev/antd/dist/reset.css";
 
 import { dataProvider, liveProvider, authProvider } from "./providers";
-import { Home, Register, ForgotPassword, Login, CompanyList, Create, EditCompany, List } from "./pages";
+import { Home, Register, ForgotPassword, Login, CompanyList, Create, EditCompany, List, CreateTask, EditTask } from "./pages";
 import { Outlet } from "react-router";
 
 import routerBindings, {
@@ -23,10 +23,8 @@ import { resources } from "./config/resources";
 function App() {
   return (
     <BrowserRouter>
-      <GitHubBanner />
       <RefineKbarProvider>
           <AntdApp>
-            <DevtoolsProvider>
               <Refine
                 dataProvider={dataProvider}
                 liveProvider={liveProvider}
@@ -62,8 +60,13 @@ function App() {
                       <Route path="new" element={<Create />} />
                       <Route path="edit/:id" element={<EditCompany />} />
                     </Route>
-                    <Route path="/tasks">
-                      <Route index element={<List />} />
+                    <Route path="/tasks" element={
+                      <List>
+                        <Outlet />
+                    </List>
+                  }>
+                    <Route path="new" element={<CreateTask />} />
+                    <Route path="edit/:id" element={<EditTask />} />
                     </Route>
                   </Route>
                 </Routes>
@@ -71,8 +74,6 @@ function App() {
                 <UnsavedChangesNotifier />
                 <DocumentTitleHandler />
               </Refine>
-              <DevtoolsPanel />
-            </DevtoolsProvider>
           </AntdApp>
       </RefineKbarProvider>
     </BrowserRouter>

@@ -31,10 +31,6 @@ const LatestActivities = () => {
     })
 
 
-    console.log(audit?.data); 
-    console.log(deals); 
-
-
     if (isError) {
         console.log(error);
         return null; 

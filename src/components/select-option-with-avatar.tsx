@@ -11,7 +11,6 @@ type Props = {
 
 export const SelectOptionWithAvatar = ({ name, avatarUrl, shape }: Props ) => {
 
-    console.log(name)
   return (
     <div
         style={{
