@@ -3,7 +3,7 @@ import React from 'react'
 
 interface Props {
     id: string, 
-    data?: UseDraggableArguments
+    data?: UseDraggableArguments["data"]
 }
 
 export const KanbanItem = ({ children, id, data }: React.PropsWithChildren<Props>) => {
