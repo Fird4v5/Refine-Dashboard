@@ -10,7 +10,7 @@ export const KanbanBoardContainer = ({ children }: React.PropsWithChildren) => {
             width: "calc(100% + 64px)", 
             height: "calc(100vh - 64px)", 
             display: "flex", 
-            justifyContent: "column", 
+            flexDirection: "column", 
             margin: "-32px"
         }}
     >

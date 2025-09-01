@@ -151,7 +151,7 @@ export const ProjectCard = ({ id, title, dueDate, users }: ProjectCardProps ) =>
                         align="center"
                         style={{ 
                             display: "flex",
-                            justifyContent: "flex-end", 
+                            justifyContent: "center", 
                             marginLeft: "auto", 
                             marginRight: 0
                         }}
