@@ -1,3 +1,58 @@
+# 📊 Refind Dashboard  
+
+A professional analytics dashboard built with React, Ant Design, and GraphQL. Designed for real-world business workflows, it features demo accounts for users to explore all functionality without signing up.  
+
+---
+
+## 🚀 Features  
+- **Analytics:** Main dashboard with latest activities, upcoming sections, revenue tracking, number of contracts, deals, and total pipeline.  
+- **Company Management:** Create, edit, and manage companies with full CRUD operations.  
+- **Tasks & Kanban Board:** Drag-and-drop task management with sections for unassigned, to review, and completed tasks.  
+- **Profile Settings:** Users can update their profile information.  
+- **Secure Access:** Demo accounts provided; no self-signup.  
+
+---
+
+## 📸 Preview  
+
+
+---
+
+## 🛠️ Tech Stack  
+- React  
+- Ant Design & @refinedev/antd components  
+- GraphQL & graphql-ws  
+- @refinedev/core & @refinedev/react-router  
+- @dnd-kit/core for drag-and-drop  
+- Day.js for date handling  
+
+---
+
+## 🌐 Live Demo  
+👉 [refine-dashboard.firdavs.codes](https://refine-dashboard.firdavs.codes)  
+
+---
+
+## 📦 Installation  
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/refind-dashboard.git
+
+# Navigate to the project folder
+cd refind-dashboard
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
+---
+
+📜 License
+This project is open-source and available under the MIT License.
+
 # cute-parents-fail
 
 <div align="center" style="margin: 30px;">
