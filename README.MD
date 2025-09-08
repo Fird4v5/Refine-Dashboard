@@ -50,9 +50,6 @@ npm start
 ```
 ---
 
-## 📜 License
-This project is open-source and available under the MIT License.
-
 # cute-parents-fail
 
 <div align="center" style="margin: 30px;">
