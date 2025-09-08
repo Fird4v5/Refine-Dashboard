@@ -1,6 +1,6 @@
 # 📊 Refind Dashboard  
 
-A professional analytics dashboard built with React, Ant Design, and GraphQL. Designed for real-world business workflows, it features demo accounts for users to explore all functionality without signing up.  
+A professional dashboard built with Refine, React, Ant Design, and GraphQL. Designed for real-world business workflows, it features demo accounts for users to explore all functionality without signing up.  
 
 ---
 
