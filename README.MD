@@ -14,7 +14,7 @@ A professional analytics dashboard built with React, Ant Design, and GraphQL. De
 ---
 
 ## 📸 Preview  
-  
+![Preview Image](./screenshot.png) 
 
 ---
 
