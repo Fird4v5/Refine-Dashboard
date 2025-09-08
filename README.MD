@@ -1,6 +1,6 @@
 # 📊 Refind Dashboard  
 
-A professional dashboard built with Refine, React, Ant Design, and GraphQL. Designed for real-world business workflows, it features demo accounts for users to explore all functionality without signing up.  
+An admin dashboard with full authentication, a homepage displaying charts and activities, a comprehensive table for companies with CRUD and search, and a Kanban board with real-time synchronization using Refine Framework. 
 
 ---
 
